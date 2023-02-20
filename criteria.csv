@@ -1,0 +1,6 @@
+﻿Cj,Name,Unit,Type
+C1,lead_time_in_days,days,-1
+C2,quantity,number,1
+C3,unit_price,dollars,-1
+C4,total_sales,number,1
+C5,esg_score,decimal,-1
