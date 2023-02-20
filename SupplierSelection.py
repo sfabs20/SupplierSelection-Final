@@ -14,7 +14,7 @@ import pydeck as pdk
 if __name__ == "__main__":
 
     st.set_page_config(page_title="Supplier Evaluation and Selection Tool", page_icon="✅", layout="wide")
-    dataset = pd.read_excel('C:\\Users\\shruti.a.nigam\\Desktop\\final_data.xlsx')
+    dataset = pd.read_excel('final_data.xlsx')
     st.title(":bar_chart: Supplier Evaluation and Selection Tool ")
     #---- Filter Section ----- #
     with st.sidebar:
@@ -98,33 +98,33 @@ with ranking:
 # In[4]:
 
 
-  criteria_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\criteria.csv", index_col = 'Cj')
+  criteria_presentation = pd.read_csv("criteria.csv", index_col = 'Cj')
 
 
 # In[5]:
 
 
-  data_tyre_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\Tyre.csv", index_col = 'Ai')
-  data_fuelfilter_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\Fuel_Filter.csv", index_col = 'Ai')
-  data_headlight_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\Head_light.csv", index_col = 'Ai')
-  data_airfilter_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\AirFilter.csv", index_col = 'Ai')
-  data_airbag_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\Airbag.csv", index_col = 'Ai')
-  data_clutch_presentation = pd.read_csv("C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\Clutch.csv", index_col = 'Ai')
+  data_tyre_presentation = pd.read_csv("Tyre.csv", index_col = 'Ai')
+  data_fuelfilter_presentation = pd.read_csv("Fuel_Filter.csv", index_col = 'Ai')
+  data_headlight_presentation = pd.read_csv("Head_light.csv", index_col = 'Ai')
+  data_airfilter_presentation = pd.read_csv("AirFilter.csv", index_col = 'Ai')
+  data_airbag_presentation = pd.read_csv("Airbag.csv", index_col = 'Ai')
+  data_clutch_presentation = pd.read_csv("Clutch.csv", index_col = 'Ai')
 # In[6]:
 
 
 # Load data from CSV
-  filename1 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Airbag.csv"
+  filename1 = "dataset_Airbag.csv"
   data1 = pd.read_csv(filename1, index_col = 'Ai')
-  filename2 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Airfilter.csv"
+  filename2 = "dataset_Airfilter.csv"
   data2 = pd.read_csv(filename2, index_col = 'Ai')
-  filename3 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Clutch.csv"
+  filename3 = "dataset_Clutch.csv"
   data3 = pd.read_csv(filename3, index_col = 'Ai')
-  filename4 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Fuel_Filter.csv"
+  filename4 = "dataset_Fuel_Filter.csv"
   data4 = pd.read_csv(filename4, index_col = 'Ai')
-  filename5 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Head_Light.csv"
+  filename5 = "dataset_Head_Light.csv"
   data5 = pd.read_csv(filename5, index_col = 'Ai')
-  filename6 = "C:\\Users\\shruti.a.nigam\\Documents\\Supplier Selection\\dataset_Tyre.csv"
+  filename6 = "dataset_Tyre.csv"
   data6 = pd.read_csv(filename6, index_col = 'Ai')
 # Load decision matrix from CSV
   df_data1 = data1.iloc[:len(data1) - 1, :]
